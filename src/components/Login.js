@@ -5,7 +5,7 @@ const Login = (props) => {
     <Container>
       <Nav>
         <a href="/">
-          <img src="/images/yellowlogo.png" alt="" />
+          <img src="/images/blackcrop.png" alt="" />
         </a>
         <div>
           <Join>Join now</Join>
@@ -15,7 +15,7 @@ const Login = (props) => {
       <Section>
         <Hero>
           <h1>Welcome to your own community</h1>
-          <img src="/images/crowd.png" alt="" />
+          {/* <img src="/images/crowd.png" alt="" /> */}
         </Hero>
         <Form>
           <Google>
@@ -30,7 +30,7 @@ const Login = (props) => {
 
 const Container = styled.div`
   padding: 0px;
-  background-color: rgba(253,206,0,255);
+
 `;
 
 const Nav = styled.nav`
@@ -51,8 +51,8 @@ const Nav = styled.nav`
     }
   }
 img{
-    width:240px;
-    height:84px;
+    width:280px;
+    height:80px;
   }
 `;
 
@@ -61,11 +61,11 @@ const Join = styled.a`
   padding: 10px 12px;
   text-decoration: none;
   border-radius: 4px;
-  color: rgba(0, 0, 0, 0.6);
+  color:white;
   margin-right: 12px;
   &:hover {
-    background-color: rgba(0, 0, 0, 0.08);
-    color: rgba(0, 0, 0, 0.9);
+    background-color :black;
+    color:rgba(253,206,0,255);
     text-decoration: none;
   }
 `;
@@ -80,10 +80,10 @@ const SignIn = styled.a`
   line-height: 40px;
   padding: 10px 24px;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: white;
   &:hover {
-    background-color: black;
-    color:rgba(253,206,0,255);
+    background-color :rgba(253,206,0,255);
+    color:black;
     text-decoration: none;
 
   }
@@ -146,6 +146,7 @@ const Hero = styled.div`
 const Form = styled.div`
   margin-top: 100px;
   width: 408px;
+  margin-left: 300px;
   @media (max-width: 768px) {
     margin-top: 20px;
   }
@@ -154,13 +155,15 @@ const Form = styled.div`
 const Google = styled.button`
   display: flex;
   justify-content: center;
+  border: solid 5px;
+
   background-color: #fff;
   align-items: center;
   height: 56px;
   width: 100%;
   border-radius: 28px;
-  box-shadow: inset 0 0 0 1px rgb(0 0 0 / 60%),
-    inset 0 0 0 2px rgb(0 0 0 / 0%) inset 0 0 0 1px rgb(0 0 0 / 0);
+  /* box-shadow: inset 0 0 0 1px rgb(0 0 0 / 60%),
+    inset 0 0 0 2px rgb(0 0 0 / 0%) inset 0 0 0 1px rgb(0 0 0 / 0); */
 
   vertical-align: middle;
   z-index: 0;
@@ -168,8 +171,8 @@ const Google = styled.button`
   font-size: 20px;
   color: rgba(0, 0, 0, 0.6);
   &:hover {
-    background-color:black;
-    color :rgba(253,206,0,255);
+    background-color:rgba(253,206,0,255);
+    color :black;
   }
 `;
 
