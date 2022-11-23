@@ -1,0 +1,51 @@
+.wrapper{
+    display: inline-flex;
+}
+
+.wrapper .dynamic-text{
+    margin-left: 15px;
+    height: 60px;
+    line-height: 60px;
+
+    
+    overflow: hidden;
+
+}
+.dynamic-text li{
+    list-style: none;
+    font-size: 60px;
+    font-weight: 500;
+    color: rgb(231, 206, 43);
+    position: relative;
+    top: 0;
+    animation: slide 4.5s steps(3) infinite;
+
+}
+@keyframes slide{
+    100%{
+        top:-180px;
+        margin: 0 -35px 0 35px ;
+    }
+}
+.dynamic-text li span{
+    position: relative;
+    
+
+}
+.dynamic-text li span:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid rgb(231, 206, 43);
+    background-color: black;
+    animation: typing 1.5s steps(10) infinite;
+
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -36px 0 36px ;
+    }
+}
