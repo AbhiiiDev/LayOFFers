@@ -20,12 +20,12 @@ const Leftside = (props) => {
               <span>Connections</span>
               <span>Grow your network</span>
             </div>
-            <img src="/images/widget-icon.svg" alt="" />
+            <img src="/images/add1113.jpg" alt="" />
           </a>
         </Widget>
         <Item>
           <span>
-            <img src="/images/item-icon.svg" alt="" />
+            <img src="/images/bookmark11.png" alt="" />
             My Items
           </span>
         </Item>
@@ -37,13 +37,11 @@ const Leftside = (props) => {
         </a>
         <a>
           <span>
-            Events
-            <img src="/images/plus-icon.svg" alt="" />
+            
+            <img src="images/pus_icon.png" alt="" />
           </span>
         </a>
-        <a>
-          <span>Follow Hashtags</span>
-        </a>
+         
         <a>
           <span>Discover more</span>
         </a>
@@ -54,12 +52,14 @@ const Leftside = (props) => {
 
 const Container = styled.div`
   grid-area: leftside;
+  background-color:rgba(0, 0, 0, 0.15);
+  margin-top:0px;
 `;
 
 const ArtCard = styled.div`
   text-align: center;
   overflow: hidden;
-  margin-bottom: 8px;
+  margin-bottom: 1px;
   background-color: #fff;
   border-radius: 5px;
   transition: box-shadow 83ms;
@@ -73,10 +73,13 @@ const UserInfo = styled.div`
   padding: 12px 12px 16px;
   word-wrap: break-word;
   word-break: break-word;
+  font-family: 'Bree Serif', serif;
+  
 `;
 
 const CardBackground = styled.div`
-  background: url("/images/card-bg.svg");
+  // background: url("/images/digital.webp");
+  background-color:black;
   background-position: center;
   background-size: 462px;
   height: 54px;
@@ -85,7 +88,7 @@ const CardBackground = styled.div`
 
 const Photo = styled.div`
   box-shadow: none;
-  background-image: url("/images/photo.svg");
+  background-image: url("/images/camera_112.png");
   width: 72px;
   height: 72px;
   box-sizing: border-box;
@@ -127,13 +130,15 @@ const Widget = styled.div`
     padding: 4px 12px;
 
     &:hover {
-      background-color: rgba(0, 0, 0, 0.08);
+      // color:yellow;
     }
 
     div {
       display: flex;
       flex-direction: column;
       text-align: left;
+      font-family: 'Space Mono', monospace;
+
       span {
         font-size: 12px;
         line-height: 1.333;
@@ -142,6 +147,9 @@ const Widget = styled.div`
         }
         &:nth-child(2) {
           color: rgba(0, 0, 0, 1);
+        }
+        &:hover{
+          color:black;
         }
       }
     }
@@ -155,9 +163,11 @@ const Widget = styled.div`
 const Item = styled.a`
   border-color: rgba(0, 0, 0, 0.8);
   text-align: left;
-  padding: 12px;
+  padding: 3px;
   font-size: 12px;
   display: block;
+  font-family: 'Space Mono', monospace;
+
   span {
     display: flex;
     align-items: center;
@@ -169,6 +179,7 @@ const Item = styled.a`
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.08);
+    // background-repeat:no-repeat;
   }
 `;
 
@@ -177,6 +188,8 @@ const CommunityCard = styled(ArtCard)`
   text-align: left;
   display: flex;
   flex-direction: column;
+  font-family: 'Space Mono', monospace;
+
   a {
     color: black;
     padding: 4px 12px 4px 12px;
@@ -200,6 +213,7 @@ const CommunityCard = styled(ArtCard)`
       padding: 12px;
       &:hover {
         background-color: rgba(0, 0, 0, 0.08);
+      
       }
     }
   }
