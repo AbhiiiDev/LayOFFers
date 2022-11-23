@@ -1,13 +1,17 @@
 body {
   overflow-y: scroll;
   overflow-x: hidden;
+
 }
 
 :root,
 body,
 html {
-  background-color: #f5f5f5;
+  background-color: black;
   box-sizing: border-box;
+  /* background: url('/public/images/meeting.jpg') no-repeat cover center; */
+  /* z-index: -1; */
+
 }
 
 div,
