@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Leftside from "./Leftside";
-import Main from "./Main";
+import Main from "./main";
 import Rightside from "./Rightside";
 
 const Home = (props) => {

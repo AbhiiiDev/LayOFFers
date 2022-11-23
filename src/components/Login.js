@@ -1,7 +1,11 @@
-import styled from "styled-components";
 import   {connect} from 'react-redux'; 
+import styled from "styled-components";
 import { signINAPI } from "../actions";
+// export default Login;
+
+
 const Login = (props) => {
+
   return (
     <Container>
       <Nav>
@@ -176,15 +180,14 @@ const Google = styled.button`
     color :black;
   }
 `;
-
-
-// export default Login;
-
 const mapStateToProps = (state)=>{
-    return {};
+  return {};
 };
 const mapDispatchToProps=(dispatch)=>({
-  signIn:()=>dispatch(signINAPI()),
-})
+signIn:()=>dispatch(signINAPI()),
+});   
 
-export default connect(mapStateToProps,mapDispatchToProps)(Login);
+
+
+  
+export default connect(mapStateToProps,mapDispatchToProps)(Login); 
