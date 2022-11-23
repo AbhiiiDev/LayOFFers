@@ -1,11 +1,19 @@
 import   {connect} from 'react-redux'; 
 import styled from "styled-components";
+<<<<<<< Updated upstream
 import { signINAPI } from "../actions";
 // export default Login;
+=======
+import "./Login.css";
+>>>>>>> Stashed changes
 
 
 const Login = (props) => {
 
+<<<<<<< Updated upstream
+=======
+ 
+>>>>>>> Stashed changes
   return (
     <Container>
       <Nav>
@@ -19,8 +27,21 @@ const Login = (props) => {
       </Nav>
       <Section>
         <Hero>
+<<<<<<< Updated upstream
           <h1>Welcome to your own community</h1>
           {/* <img src="/images/crowd.png" alt="" /> */}
+=======
+          <div className="wrapper">
+            <ul className="dynamic-text">
+            <li><span>Got Fired </span></li>
+            <li><span>Get Hired </span></li>
+            <li><span>LayOFFers</span></li>
+            </ul>
+
+            
+          </div>
+          <img src="/images/crowd.png" alt="" />
+>>>>>>> Stashed changes
         </Hero>
         <Form>
           <Google onClick={()=>props.signIn}>
@@ -35,8 +56,13 @@ const Login = (props) => {
 
 const Container = styled.div`
   padding: 0px;
+<<<<<<< Updated upstream
 
 `;
+=======
+  background-color:black
+  `;
+>>>>>>> Stashed changes
 
 const Nav = styled.nav`
   max-width: 1128px;
@@ -189,5 +215,12 @@ signIn:()=>dispatch(signINAPI()),
 
 
 
+<<<<<<< Updated upstream
   
 export default connect(mapStateToProps,mapDispatchToProps)(Login); 
+=======
+
+
+
+export default Login;
+>>>>>>> Stashed changes
